@@ -301,11 +301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My projects\\WebApiStore\\WebApiStore\\WebApiStore.csproj",
+      "projectUniqueName": "E:\\My projects\\WebApiStore\\src\\WebApiStore\\WebApiStore.csproj",
       "projectName": "WebApiStore",
-      "projectPath": "E:\\My projects\\WebApiStore\\WebApiStore\\WebApiStore.csproj",
+      "projectPath": "E:\\My projects\\WebApiStore\\src\\WebApiStore\\WebApiStore.csproj",
       "packagesPath": "C:\\Users\\william.macarini\\.nuget\\packages\\",
-      "outputPath": "E:\\My projects\\WebApiStore\\WebApiStore\\obj\\",
+      "outputPath": "E:\\My projects\\WebApiStore\\src\\WebApiStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
