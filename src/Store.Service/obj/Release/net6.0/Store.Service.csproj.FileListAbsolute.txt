@@ -1,0 +1,15 @@
+E:\My projects\WebApiStore\src\Store.Service\bin\Release\net6.0\Store.Service.deps.json
+E:\My projects\WebApiStore\src\Store.Service\bin\Release\net6.0\Store.Service.dll
+E:\My projects\WebApiStore\src\Store.Service\bin\Release\net6.0\Store.Service.pdb
+E:\My projects\WebApiStore\src\Store.Service\bin\Release\net6.0\Store.Domain.dll
+E:\My projects\WebApiStore\src\Store.Service\bin\Release\net6.0\Store.Domain.pdb
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.csproj.AssemblyReference.cache
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.AssemblyInfoInputs.cache
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.AssemblyInfo.cs
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.csproj.CoreCompileInputs.cache
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.csproj.CopyComplete
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.dll
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\refint\Store.Service.dll
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\Store.Service.pdb
+E:\My projects\WebApiStore\src\Store.Service\obj\Release\net6.0\ref\Store.Service.dll

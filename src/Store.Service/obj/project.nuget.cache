@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0UVnZkAyZADWKKLHq930N9ngq7HIdMAf9tQPW/LwGHkWRs7bXsHv+BrBbhP9hbghRghhgfZwkkmLUWKc+CHQkA==",
+  "success": true,
+  "projectFilePath": "E:\\My projects\\WebApiStore\\src\\Store.Service\\Store.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\william.macarini\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

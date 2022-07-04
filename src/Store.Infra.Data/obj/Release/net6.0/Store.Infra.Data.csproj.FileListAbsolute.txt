@@ -1,0 +1,15 @@
+E:\My projects\WebApiStore\src\Store.Infra.Data\bin\Release\net6.0\Store.Infra.Data.deps.json
+E:\My projects\WebApiStore\src\Store.Infra.Data\bin\Release\net6.0\Store.Infra.Data.dll
+E:\My projects\WebApiStore\src\Store.Infra.Data\bin\Release\net6.0\Store.Infra.Data.pdb
+E:\My projects\WebApiStore\src\Store.Infra.Data\bin\Release\net6.0\Store.Domain.dll
+E:\My projects\WebApiStore\src\Store.Infra.Data\bin\Release\net6.0\Store.Domain.pdb
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.csproj.AssemblyReference.cache
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.AssemblyInfoInputs.cache
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.AssemblyInfo.cs
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.csproj.CoreCompileInputs.cache
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.csproj.CopyComplete
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.dll
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\refint\Store.Infra.Data.dll
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\Store.Infra.Data.pdb
+E:\My projects\WebApiStore\src\Store.Infra.Data\obj\Release\net6.0\ref\Store.Infra.Data.dll
