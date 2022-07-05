@@ -13,6 +13,12 @@ namespace Store.Infra.Data.Maps
             builder.Property(p => p.PurchaseId)
                 .HasColumnName("id")
                 .UseIdentityColumn();
+            builder.Property(p => p.PurchaseId)
+                .HasColumnName("purchase_id");
+            builder.Property(p => p.ProductId)
+                .HasColumnName("product_id");
+            builder.Property(p => p.PurchaseDate)
+                .HasColumnName("purchase_date");
             builder.HasOne(h => h.User)
                 .WithMany(w => w.Purchases);
             builder.HasOne(h => h.Product)
