@@ -29,12 +29,12 @@ namespace Store.Infra.Data.Repositories
 
         public async Task<User> GetByIdAsync(int id)
         {
-            return await _context.Users.FirstOrDefaultAsync(f => f.Id == id);
+            return await _context.UserStore.FirstOrDefaultAsync(f => f.UserId == id);
         }
 
         public async Task<ICollection<User>> GetPeopleAsync()
         {
-            return await _context.Users.ToListAsync();
+            return await _context.UserStore.ToListAsync();
         }
 
         public async Task UpdateAsync(User user)

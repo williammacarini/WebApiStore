@@ -4,7 +4,7 @@ namespace Store.Domain.Entities
 {
     public class Product
     {
-        public int Id { get; private set; }
+        public int ProductId { get; private set; }
         public string Name { get; private set; }
         public string Code { get; private set; }
         public decimal Price { get; private set; }
@@ -13,13 +13,15 @@ namespace Store.Domain.Entities
         public Product(string name, string code, decimal price)
         {
             Validation(name, code, price);
+            Purchases = new List<Purchase>();
         }
 
         public Product(int id, string name, string code, decimal price)
         {
             DomainValidationException.When(id < 0, "Id deve ser maior que zero!");
-            Id = id;
+            ProductId = id;
             Validation(name, code, price);
+            Purchases = new List<Purchase>();
         }
 
         private void Validation(string name, string code, decimal price)

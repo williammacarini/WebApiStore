@@ -8,10 +8,10 @@ namespace Store.Infra.Data.Maps
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.ToTable("Products");
-            builder.HasKey(x => x.Id);
-            builder.Property(p => p.Id)
-                .HasColumnName("Id")
+            builder.ToTable("product");
+            builder.HasKey(x => x.ProductId);
+            builder.Property(p => p.ProductId)
+                .HasColumnName("id")
                 .UseIdentityColumn();
             builder.HasMany(h => h.Purchases)
                 .WithOne(w => w.Product)

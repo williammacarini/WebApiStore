@@ -197,3 +197,6 @@ E:\My projects\WebApiStore\src\WebApiStore\bin\Debug\net6.0\Microsoft.EntityFram
 E:\My projects\WebApiStore\src\WebApiStore\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 E:\My projects\WebApiStore\src\WebApiStore\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 E:\My projects\WebApiStore\src\WebApiStore\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+E:\My projects\WebApiStore\src\WebApiStore\bin\Debug\net6.0\AutoMapper.dll
+E:\My projects\WebApiStore\src\WebApiStore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\My projects\WebApiStore\src\WebApiStore\obj\Debug\net6.0\WebApiStore.MvcApplicationPartsAssemblyInfo.cs

@@ -29,12 +29,12 @@ namespace Store.Infra.Data.Repositories
 
         public async Task<Product> GetByIdAsync(int id)
         {
-            return await _context.Products.FirstOrDefaultAsync(f => f.Id == id);
+            return await _context.Product.FirstOrDefaultAsync(f => f.ProductId == id);
         }
 
         public async Task<ICollection<Product>> GetProductsAsync()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Product.ToListAsync();
         }
 
         public async Task UpdateAsync(Product product)

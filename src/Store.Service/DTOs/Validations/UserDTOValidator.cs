@@ -6,7 +6,7 @@ namespace Store.Service.DTOs.Validations
     {
         public UserDTOValidator()
         {
-            RuleFor(r => r.Id)
+            RuleFor(r => r.UserId)
                 .NotEmpty()
                 .NotNull()
                 .WithMessage("Deve ser informando o ID!");

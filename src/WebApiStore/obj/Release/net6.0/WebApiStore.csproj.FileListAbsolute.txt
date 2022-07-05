@@ -171,3 +171,5 @@ E:\My projects\WebApiStore\src\WebApiStore\obj\Release\net6.0\refint\WebApiStore
 E:\My projects\WebApiStore\src\WebApiStore\obj\Release\net6.0\WebApiStore.pdb
 E:\My projects\WebApiStore\src\WebApiStore\obj\Release\net6.0\WebApiStore.genruntimeconfig.cache
 E:\My projects\WebApiStore\src\WebApiStore\obj\Release\net6.0\ref\WebApiStore.dll
+E:\My projects\WebApiStore\src\WebApiStore\bin\Release\net6.0\AutoMapper.dll
+E:\My projects\WebApiStore\src\WebApiStore\bin\Release\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

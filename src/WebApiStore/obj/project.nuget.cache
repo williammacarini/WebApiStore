@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UTecpS6F3Wc63pn7yBiN7sFFmLpzVtInTRGokPUXhGdvYK31FjyeV63/kb5dvYnORpCruREckJqRhYUxx090Sw==",
+  "dgSpecHash": "UugMeQtVKBh52Y5izL+G845DcAbUkUAxzoWXSVt2XMhYr5Qoskk3paz/MOtHiTQ9UgHLpNN8kTEwPtCWSYYNsQ==",
   "success": true,
   "projectFilePath": "E:\\My projects\\WebApiStore\\src\\WebApiStore\\WebApiStore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\william.macarini\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\baseline\\3.2.2\\baseline.3.2.2.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\baselinetypediscovery\\1.1.3\\baselinetypediscovery.1.1.3.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\fastexpressioncompiler.internal.src\\3.2.2\\fastexpressioncompiler.internal.src.3.2.2.nupkg.sha512",

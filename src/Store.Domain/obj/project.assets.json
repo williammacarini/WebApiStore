@@ -33,7 +33,7 @@
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.ambevdevs.com.br/nexus/": {}
+        "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
       },
       "frameworks": {
         "net6.0": {

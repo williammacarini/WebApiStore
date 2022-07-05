@@ -8,11 +8,17 @@ namespace Store.Infra.Data.Maps
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("User");
-            builder.HasKey(x => x.Id);
-            builder.Property(x => x.Id)
-                .HasColumnName("Id")
+            builder.ToTable("userstore");
+            builder.HasKey(x => x.UserId);
+            builder.Property(x => x.UserId)
+                .HasColumnName("userid")
                 .UseIdentityColumn();
+            builder.Property(p => p.Name)
+                .HasColumnName("name");
+            builder.Property(p => p.LastName)
+                .HasColumnName("lastname");
+            builder.Property(p => p.Email)
+                .HasColumnName("email");
             builder.HasMany(x => x.Purchases)
                 .WithOne(w => w.User)
                 .HasForeignKey(c => c.UserId);

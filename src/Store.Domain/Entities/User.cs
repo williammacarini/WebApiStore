@@ -4,7 +4,7 @@ namespace Store.Domain.Entities
 {
     public class User
     {
-        public int Id { get; private set; }
+        public int UserId { get; private set; }
         public string Name { get; private set; }
         public string LastName { get; private set; }
         public string Email { get; private set; }
@@ -13,13 +13,15 @@ namespace Store.Domain.Entities
         public User(string name, string lastName, string email)
         {
             Validation(name, lastName, email);
+            Purchases = new List<Purchase>();
         }
 
         public User(int id, string name, string lastName, string email)
         {
             DomainValidationException.When(id < 0, "Id deve ser maior que zero!");
-            Id = id;
+            UserId = id;
             Validation(name, lastName, email);
+            Purchases = new List<Purchase>();
         }
 
         private void Validation(string name, string lastName, string email)
