@@ -9,6 +9,7 @@ namespace Store.Service.Mapper
         public MapperEntity()
         {
             CreateMap<User, UserDTO>().ReverseMap();
+            CreateMap<UserDTO, User>().ReverseMap();
             //CreateMap<Product, ProductDTO>().ReverseMap();
             //CreateMap<Purchase, PurchaseDTO>().ReverseMap();
         }

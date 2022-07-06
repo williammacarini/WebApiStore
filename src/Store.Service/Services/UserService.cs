@@ -31,5 +31,21 @@ namespace Store.Service.Services
             var data = await _userRepository.CreateUserAsync(user);
             return ResultService.Ok<UserDTO>(_mapper.Map<UserDTO>(data));
         }
+
+        public async Task<ResultService<ICollection<UserDTO>>> GetPeopleAsync()
+        {
+            var people = await _userRepository.GetPeopleAsync();
+            if (people == null)
+                return ResultService.Fail<ICollection<UserDTO>>("Usuários não encontrados!");
+            return ResultService.Ok<ICollection<UserDTO>>(_mapper.Map<ICollection<UserDTO>>(people));
+        }
+
+        public async Task<ResultService<UserDTO>> GetByIdAsync(int id)
+        {
+            var person = await _userRepository.GetByIdAsync(id);
+            if (person == null)
+                return ResultService.Fail<UserDTO>("Usuário não encontrados!");
+            return ResultService.Ok<UserDTO>(_mapper.Map<UserDTO>(person));
+        }
     }
 }
