@@ -18,14 +18,16 @@ namespace Store.Infra.CrossCutting.IoC
                 options.UseNpgsql(configuration.GetConnectionString("Marten")));
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
             return services;
         }
 
         public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddAutoMapper(typeof(MapperEntity));
+            services.AddAutoMapper(typeof(Mapper));
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IProductService, ProductService>();
 
             return services;
         }

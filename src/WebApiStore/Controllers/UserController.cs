@@ -16,7 +16,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> PostUserAsync([FromBody] UserDTO userDTO)
+        public async Task<ActionResult> CreateUserAsync([FromBody] UserDTO userDTO)
         {
             var result = await _userService.CreateAsync(userDTO);
             if (result.IsSucess)
@@ -25,10 +25,21 @@ namespace WebApiStore.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet]
-        public async Task<ActionResult> GetPeopleAsync()
+        [HttpPut]
+        public async Task<ActionResult> UpdateUserAsync([FromBody] UserDTO userDTO)
         {
-            var result = await _userService.GetPeopleAsync();
+            var result = await _userService.UpdateUserAsync(userDTO);
+            if (result.IsSucess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
+
+        [HttpDelete]
+        [Route("{userId}")]
+        public async Task<ActionResult> DeleteUserAsync(int userId)
+        {
+            var result = await _userService.DeleteUserAsync(userId);
             if (result.IsSucess)
                 return Ok(result);
 
@@ -36,10 +47,20 @@ namespace WebApiStore.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
-        public async Task<ActionResult> GetByIdAsync(int id)
+        public async Task<ActionResult> GetUserAsync()
         {
-            var result = await _userService.GetByIdAsync(id);
+            var result = await _userService.GetUserAsync();
+            if (result.IsSucess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
+
+        [HttpGet]
+        [Route("{userId}")]
+        public async Task<ActionResult> GetUserByIdAsync(int userId)
+        {
+            var result = await _userService.GetUserByIdAsync(userId);
             if (result.IsSucess)
                 return Ok(result);
 

@@ -4,14 +4,12 @@ using Store.Service.DTOs;
 
 namespace Store.Service.Mapper
 {
-    public class MapperEntity : Profile
+    public class Mapper : Profile
     {
-        public MapperEntity()
+        public Mapper()
         {
             CreateMap<User, UserDTO>().ReverseMap();
-            CreateMap<UserDTO, User>().ReverseMap();
-            //CreateMap<Product, ProductDTO>().ReverseMap();
-            //CreateMap<Purchase, PurchaseDTO>().ReverseMap();
+            CreateMap<Product, ProductDTO>().ReverseMap();
         }
     }
 }

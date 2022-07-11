@@ -32,7 +32,7 @@ namespace Store.Service.Services
             return ResultService.Ok<UserDTO>(_mapper.Map<UserDTO>(data));
         }
 
-        public async Task<ResultService<ICollection<UserDTO>>> GetPeopleAsync()
+        public async Task<ResultService<ICollection<UserDTO>>> GetUserAsync()
         {
             var people = await _userRepository.GetPeopleAsync();
             if (people == null)
@@ -40,12 +40,44 @@ namespace Store.Service.Services
             return ResultService.Ok<ICollection<UserDTO>>(_mapper.Map<ICollection<UserDTO>>(people));
         }
 
-        public async Task<ResultService<UserDTO>> GetByIdAsync(int id)
+        public async Task<ResultService<UserDTO>> GetUserByIdAsync(int id)
         {
             var person = await _userRepository.GetByIdAsync(id);
             if (person == null)
                 return ResultService.Fail<UserDTO>("Usuário não encontrados!");
             return ResultService.Ok<UserDTO>(_mapper.Map<UserDTO>(person));
+        }
+
+        public async Task<ResultService> UpdateUserAsync(UserDTO userDTO)
+        {
+            if (userDTO == null)
+                return ResultService.Fail("Objeto deve ser informado!");
+
+            var userValidation = new UserDTOValidator().Validate(userDTO);
+
+            if (!userValidation.IsValid)
+                return ResultService.RequestError("Erro na validação dos campos!", userValidation);
+
+            var user = await _userRepository.GetByIdAsync(userDTO.UserId);
+
+            if (user == null)
+                return ResultService.Fail("Usuário não encontrado!");
+
+            user = _mapper.Map<UserDTO, User>(userDTO, user);
+            await _userRepository.UpdateAsync(user);
+            return ResultService.Ok("Usuário atualizado!");
+        }
+
+        public async Task<ResultService> DeleteUserAsync(int userId)
+        {
+            var user = await _userRepository.GetByIdAsync(userId);
+
+            if (user == null)
+                return ResultService.Fail("Usuário não encontrado");
+
+            await _userRepository.DeleteAsync(user);
+
+            return ResultService.Ok($"Usuário com Id: {userId} foi excluído com sucesso!");
         }
     }
 }
