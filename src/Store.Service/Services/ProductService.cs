@@ -32,5 +32,20 @@ namespace Store.Service.Services
             var productAdded = await _productRepository.CreateProductAsync(product);
             return ResultService.Ok<ProductDTO>(_mapper.Map<ProductDTO>(productAdded));
         }
+
+        public async Task<ResultService<ICollection<ProductDTO>>> GetAllProductsAsync()
+        {
+            var result = await _productRepository.GetProductsAsync();
+            return ResultService.Ok<ICollection<ProductDTO>>(_mapper.Map<ICollection<ProductDTO>>(result));
+        }
+
+        public async Task<ResultService<ProductDTO>> GetProductByIdAsync(int productId)
+        {
+            var result = await _productRepository.GetByIdAsync(productId);
+            if (result == null)
+                return ResultService.Fail<ProductDTO>("Produto não encontrado!");
+
+            return ResultService.Ok<ProductDTO>(_mapper.Map<ProductDTO>(result));
+        }
     }
 }
