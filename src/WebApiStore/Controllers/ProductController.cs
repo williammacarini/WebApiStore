@@ -45,5 +45,26 @@ namespace WebApiStore.Controllers
 
             return BadRequest(result);
         }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateProductAsync([FromBody] ProductDTO productDTO)
+        {
+            var result = await _productService.UpdateProductAsync(productDTO);
+            if (result.IsSucess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
+
+        [HttpDelete]
+        [Route("{productId}")]
+        public async Task<ActionResult> DeleteProductAsync(int productId)
+        {
+            var result = await _productService.DeleteProductAsync(productId);
+            if (result.IsSucess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
     }
 }

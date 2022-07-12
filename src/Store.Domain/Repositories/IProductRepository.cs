@@ -9,5 +9,6 @@ namespace Store.Domain.Repositories
         Task<Product> CreateProductAsync(Product product);
         Task UpdateAsync(Product product);
         Task DeleteAsync(Product product);
+        Task<int> GetIdByCodeAsync(string code);
     }
 }

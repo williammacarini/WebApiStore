@@ -42,5 +42,10 @@ namespace Store.Infra.Data.Repositories
             _context.Update(user);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<int> GetIdByDocumentAsync(string document)
+        {
+            return (await _context.User.FirstOrDefaultAsync(f => f.Name == document))?.UserId ?? 0;
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace Store.Domain.Repositories
         Task<User> CreateUserAsync(User user);
         Task UpdateAsync(User user);
         Task DeleteAsync(User user);
+        Task<int> GetIdByDocumentAsync(string document);
     }
 }

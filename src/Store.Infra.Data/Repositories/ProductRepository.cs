@@ -42,5 +42,10 @@ namespace Store.Infra.Data.Repositories
             _context.Update(product);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<int> GetIdByCodeAsync(string code)
+        {
+            return (await _context.Product.FirstOrDefaultAsync(f => f.Code == code))?.ProductId ?? 0;
+        }
     }
 }

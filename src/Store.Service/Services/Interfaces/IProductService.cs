@@ -7,5 +7,7 @@ namespace Store.Service.Services.Interfaces
         Task<ResultService<ProductDTO>> CreateProductAsync(ProductDTO product);
         Task<ResultService<ProductDTO>> GetProductByIdAsync(int productId);
         Task<ResultService<ICollection<ProductDTO>>> GetAllProductsAsync();
+        Task<ResultService> UpdateProductAsync(ProductDTO productDTO);
+        Task<ResultService> DeleteProductAsync(int id);
     }
 }
