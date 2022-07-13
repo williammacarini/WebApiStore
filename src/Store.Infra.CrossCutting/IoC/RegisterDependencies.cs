@@ -19,6 +19,7 @@ namespace Store.Infra.CrossCutting.IoC
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 
             return services;
         }
@@ -28,6 +29,7 @@ namespace Store.Infra.CrossCutting.IoC
             services.AddAutoMapper(typeof(Mapper));
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IPurchaseService, PurchaseService>();
 
             return services;
         }
