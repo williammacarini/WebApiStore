@@ -23,6 +23,13 @@ namespace Store.Domain.Entities
             Validation(productId, userId);
         }
 
+        public void Edit(int id, int productId, int userId)
+        {
+            DomainValidationException.When(id <= 0, "Id deve ser maior que zero!");
+            PurchaseId = id;
+            Validation(productId, userId);
+        }
+
         private void Validation(int productId, int userId)
         {
             DomainValidationException.When(productId <= 0, "Id do produto é um campo obrigatório!");

@@ -29,12 +29,18 @@ namespace Store.Infra.Data.Repositories
 
         public async Task<Purchase> GetByIdAsync(int id)
         {
-            return await _context.Purchase.FirstOrDefaultAsync(f => f.PurchaseId == id);
+            return await _context.Purchase
+                .Include(i => i.User)
+                .Include(i => i.Product)
+                .FirstOrDefaultAsync(f => f.PurchaseId == id);
         }
 
         public async Task<ICollection<Purchase>> GetPurchasesAsync()
         {
-            return await _context.Purchase.ToListAsync();
+            return await _context.Purchase
+                .Include(i => i.User)
+                .Include(i => i.Product)
+                .ToListAsync();
         }
 
         public async Task UpdateAsync(Purchase purchase)
