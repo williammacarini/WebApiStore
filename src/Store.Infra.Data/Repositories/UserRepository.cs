@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Store.Domain.Entities;
+using Store.Domain.FilterDB;
 using Store.Domain.Repositories;
 using Store.Infra.Data.Context;
 
@@ -46,6 +47,15 @@ namespace Store.Infra.Data.Repositories
         public async Task<int> GetIdByDocumentAsync(string document)
         {
             return (await _context.User.FirstOrDefaultAsync(f => f.Name == document))?.UserId ?? 0;
+        }
+
+        public async Task<PagedBaseResponse<User>> GetPagedUserAsync(UserFilterDb request)
+        {
+            var people = _context.User.AsQueryable();
+            if (string.IsNullOrEmpty(request.Name))
+                people = people.Where(w => w.Name.Contains(request.Name));
+
+            return await PagedBaseResponseHelper.GetResponseAsync<PagedBaseResponse<User>, User>(people, request);
         }
     }
 }

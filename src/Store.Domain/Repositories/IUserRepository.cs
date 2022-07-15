@@ -1,4 +1,5 @@
 ﻿using Store.Domain.Entities;
+using Store.Domain.FilterDB;
 
 namespace Store.Domain.Repositories
 {
@@ -10,5 +11,6 @@ namespace Store.Domain.Repositories
         Task UpdateAsync(User user);
         Task DeleteAsync(User user);
         Task<int> GetIdByDocumentAsync(string document);
+        Task<PagedBaseResponse<User>> GetPagedUserAsync(UserFilterDb);
     }
 }

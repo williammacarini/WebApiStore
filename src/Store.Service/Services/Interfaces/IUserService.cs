@@ -1,4 +1,5 @@
-﻿using Store.Service.DTOs;
+﻿using Store.Domain.FilterDB;
+using Store.Service.DTOs;
 
 namespace Store.Service.Services.Interfaces
 {
@@ -9,5 +10,6 @@ namespace Store.Service.Services.Interfaces
         Task<ResultService<UserDTO>> GetUserByIdAsync(int userId);
         Task<ResultService> UpdateUserAsync(UserDTO userDTO);
         Task<ResultService> DeleteUserAsync(int userId);
+        Task<ResultService<PagedBaseResponseDTO<UserDTO>>> GetPagedUserAsync(UserFilterDb userFilterDb);
     }
 }

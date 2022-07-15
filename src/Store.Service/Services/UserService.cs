@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Store.Domain.Entities;
+using Store.Domain.FilterDB;
 using Store.Domain.Repositories;
 using Store.Service.DTOs;
 using Store.Service.DTOs.Validations;
@@ -78,6 +79,14 @@ namespace Store.Service.Services
             await _userRepository.DeleteAsync(user);
 
             return ResultService.Ok($"Usuário com Id: {userId} foi excluído com sucesso!");
+        }
+
+        public async Task<ResultService<PagedBaseResponseDTO<UserDTO>>> GetPagedUserAsync(UserFilterDb userFilterDb)
+        {
+            var peoplePaged = await _userRepository.GetPagedUserAsync(userFilterDb);
+            var result = new PagedBaseResponseDTO<UserDTO>(peoplePaged.TotalRegisters, _mapper.Map<List<UserDTO>>(peoplePaged.Data));
+
+            return ResultService.Ok(result);
         }
     }
 }

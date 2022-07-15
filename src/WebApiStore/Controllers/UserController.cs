@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Store.Domain.FilterDB;
 using Store.Service.DTOs;
 using Store.Service.Services.Interfaces;
 
@@ -61,6 +62,17 @@ namespace WebApiStore.Controllers
         public async Task<ActionResult> GetUserByIdAsync(int userId)
         {
             var result = await _userService.GetUserByIdAsync(userId);
+            if (result.IsSucess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
+
+        [HttpGet]
+        [Route("paged")]
+        public async Task<ActionResult> GetPagedUserAsync([FromQuery] UserFilterDb userFilterDb)
+        {
+            var result = await _userService.GetPagedUserAsync(userFilterDb);
             if (result.IsSucess)
                 return Ok(result);
 
