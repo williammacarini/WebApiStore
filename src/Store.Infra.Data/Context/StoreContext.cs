@@ -13,6 +13,7 @@ namespace Store.Infra.Data.Context
         public DbSet<User> User { get; set; }
         public DbSet<Product> Product { get; set; }
         public DbSet<Purchase> Purchase { get; set; }
+        public DbSet<UserAuthentication> UserAuthentication { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
