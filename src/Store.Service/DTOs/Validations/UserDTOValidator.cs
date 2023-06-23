@@ -2,9 +2,9 @@
 
 namespace Store.Service.DTOs.Validations
 {
-    public class UserDTOValidator : AbstractValidator<UserDTO>
+    public class UserDtoValidator : AbstractValidator<UserDto>
     {
-        public UserDTOValidator()
+        public UserDtoValidator()
         {
             RuleFor(r => r.UserId)
                 .NotEmpty()

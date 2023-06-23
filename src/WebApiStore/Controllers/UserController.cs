@@ -17,7 +17,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateUserAsync([FromBody] UserDTO userDTO)
+        public async Task<ActionResult> CreateUserAsync([FromBody] UserDto userDTO)
         {
             var result = await _userService.CreateAsync(userDTO);
             if (result.IsSucess)
@@ -27,7 +27,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateUserAsync([FromBody] UserDTO userDTO)
+        public async Task<ActionResult> UpdateUserAsync([FromBody] UserDto userDTO)
         {
             var result = await _userService.UpdateUserAsync(userDTO);
             if (result.IsSucess)

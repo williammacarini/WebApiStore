@@ -17,3 +17,22 @@ E:\My projects\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.I
 E:\My projects\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\refint\Store.Infra.CrossCutting.dll
 E:\My projects\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.pdb
 E:\My projects\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\ref\Store.Infra.CrossCutting.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Infra.CrossCutting.deps.json
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Infra.CrossCutting.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Infra.CrossCutting.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Domain.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Infra.Data.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Service.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Domain.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Infra.Data.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\bin\Debug\net6.0\Store.Service.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.csproj.AssemblyReference.cache
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.AssemblyInfo.cs
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.csproj.CopyComplete
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\refint\Store.Infra.CrossCutting.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\Store.Infra.CrossCutting.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Infra.CrossCutting\obj\Debug\net6.0\ref\Store.Infra.CrossCutting.dll

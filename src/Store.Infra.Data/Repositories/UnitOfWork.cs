@@ -24,10 +24,7 @@ namespace Store.Infra.Data.Repositories
             await _dbContextTransaction.CommitAsync();
         }
 
-        public void Dispose()
-        {
-            _dbContextTransaction?.Dispose();
-        }
+        public void Dispose() => _dbContextTransaction?.Dispose();
 
         public async Task Rollback()
         {

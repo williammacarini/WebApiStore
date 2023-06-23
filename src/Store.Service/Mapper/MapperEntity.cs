@@ -8,14 +8,14 @@ namespace Store.Service.Mapper
     {
         public Mapper()
         {
-            CreateMap<User, UserDTO>().ReverseMap();
-            CreateMap<Product, ProductDTO>().ReverseMap();
-            CreateMap<Purchase, PurchaseDetailDTO>()
+            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<Product, ProductDto>().ReverseMap();
+            CreateMap<Purchase, PurchaseDetailDto>()
                 .ForMember(f => f.User, opt => opt.Ignore())
                 .ForMember(f => f.Product, opt => opt.Ignore())
                 .ConstructUsing((model, context) =>
                 {
-                    var dto = new PurchaseDetailDTO
+                    var dto = new PurchaseDetailDto
                     {
                         Product = model.Product.Name,
                         PurchaseId = model.PurchaseId,

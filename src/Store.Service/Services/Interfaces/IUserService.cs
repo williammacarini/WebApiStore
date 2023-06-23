@@ -5,11 +5,11 @@ namespace Store.Service.Services.Interfaces
 {
     public interface IUserService
     {
-        Task<ResultService<UserDTO>> CreateAsync(UserDTO userDTO);
-        Task<ResultService<ICollection<UserDTO>>> GetUserAsync();
-        Task<ResultService<UserDTO>> GetUserByIdAsync(int userId);
-        Task<ResultService> UpdateUserAsync(UserDTO userDTO);
+        Task<ResultService<UserDto>> CreateAsync(UserDto userDTO);
+        Task<ResultService<ICollection<UserDto>>> GetUserAsync();
+        Task<ResultService<UserDto>> GetUserByIdAsync(int userId);
+        Task<ResultService> UpdateUserAsync(UserDto userDTO);
         Task<ResultService> DeleteUserAsync(int userId);
-        Task<ResultService<PagedBaseResponseDTO<UserDTO>>> GetPagedUserAsync(UserFilterDb userFilterDb);
+        Task<ResultService<PagedBaseResponseDto<UserDto>>> GetPagedUserAsync(UserFilterDb userFilterDb);
     }
 }

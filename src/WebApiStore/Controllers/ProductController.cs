@@ -16,7 +16,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateProductAsync([FromBody] ProductDTO productDTO)
+        public async Task<ActionResult> CreateProductAsync([FromBody] ProductDto productDTO)
         {
             var result = await _productService.CreateProductAsync(productDTO);
             if (result.IsSucess)
@@ -47,7 +47,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateProductAsync([FromBody] ProductDTO productDTO)
+        public async Task<ActionResult> UpdateProductAsync([FromBody] ProductDto productDTO)
         {
             var result = await _productService.UpdateProductAsync(productDTO);
             if (result.IsSucess)

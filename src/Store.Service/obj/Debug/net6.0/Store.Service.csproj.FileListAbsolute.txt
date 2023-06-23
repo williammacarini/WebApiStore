@@ -13,3 +13,18 @@ E:\My projects\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.dll
 E:\My projects\WebApiStore\src\Store.Service\obj\Debug\net6.0\refint\Store.Service.dll
 E:\My projects\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.pdb
 E:\My projects\WebApiStore\src\Store.Service\obj\Debug\net6.0\ref\Store.Service.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Service\bin\Debug\net6.0\Store.Service.deps.json
+C:\Repository\GitHub\WebApiStore\src\Store.Service\bin\Debug\net6.0\Store.Service.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Service\bin\Debug\net6.0\Store.Service.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Service\bin\Debug\net6.0\Store.Domain.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Service\bin\Debug\net6.0\Store.Domain.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.csproj.AssemblyReference.cache
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.AssemblyInfoInputs.cache
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.AssemblyInfo.cs
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.csproj.CoreCompileInputs.cache
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.csproj.CopyComplete
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\refint\Store.Service.dll
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\Store.Service.pdb
+C:\Repository\GitHub\WebApiStore\src\Store.Service\obj\Debug\net6.0\ref\Store.Service.dll

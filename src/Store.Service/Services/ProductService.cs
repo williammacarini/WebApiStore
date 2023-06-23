@@ -18,51 +18,51 @@ namespace Store.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<ResultService<ProductDTO>> CreateProductAsync(ProductDTO productDTO)
+        public async Task<ResultService<ProductDto>> CreateProductAsync(ProductDto productDto)
         {
-            if (productDTO == null)
-                return ResultService.Fail<ProductDTO>("Objeto deve ser informado!");
+            if (productDto == null)
+                return ResultService.Fail<ProductDto>("Objeto deve ser informado!");
 
-            var result = new ProductDTOValidator().Validate(productDTO);
+            var result = new ProductDtoValidator().Validate(productDto);
 
             if (!result.IsValid)
-                return ResultService.RequestError<ProductDTO>("Problema na validação!", result);
+                return ResultService.RequestError<ProductDto>("Problema na validação!", result);
 
-            var product = _mapper.Map<Product>(productDTO);
+            var product = _mapper.Map<Product>(productDto);
             var productAdded = await _productRepository.CreateProductAsync(product);
-            return ResultService.Ok<ProductDTO>(_mapper.Map<ProductDTO>(productAdded));
+            return ResultService.Ok(_mapper.Map<ProductDto>(productAdded));
         }
 
-        public async Task<ResultService<ICollection<ProductDTO>>> GetAllProductsAsync()
+        public async Task<ResultService<ICollection<ProductDto>>> GetAllProductsAsync()
         {
             var result = await _productRepository.GetProductsAsync();
-            return ResultService.Ok<ICollection<ProductDTO>>(_mapper.Map<ICollection<ProductDTO>>(result));
+            return ResultService.Ok(_mapper.Map<ICollection<ProductDto>>(result));
         }
 
-        public async Task<ResultService<ProductDTO>> GetProductByIdAsync(int productId)
+        public async Task<ResultService<ProductDto>> GetProductByIdAsync(int productId)
         {
             var result = await _productRepository.GetByIdAsync(productId);
             if (result == null)
-                return ResultService.Fail<ProductDTO>("Produto não encontrado!");
+                return ResultService.Fail<ProductDto>("Produto não encontrado!");
 
-            return ResultService.Ok<ProductDTO>(_mapper.Map<ProductDTO>(result));
+            return ResultService.Ok(_mapper.Map<ProductDto>(result));
         }
 
-        public async Task<ResultService> UpdateProductAsync(ProductDTO productDTO)
+        public async Task<ResultService> UpdateProductAsync(ProductDto productDto)
         {
-            if (productDTO == null)
+            if (productDto == null)
                 return ResultService.Fail("Objeto deve ser informado!");
 
-            var validation = new ProductDTOValidator().Validate(productDTO);
+            var validation = new ProductDtoValidator().Validate(productDto);
 
             if (!validation.IsValid)
                 return ResultService.RequestError("Problemas na validação!", validation);
 
-            var product = await _productRepository.GetByIdAsync(productDTO.ProductId);
+            var product = await _productRepository.GetByIdAsync(productDto.ProductId);
             if (product == null)
                 return ResultService.Fail("Produto não encontrado!");
 
-            product = _mapper.Map<ProductDTO, Product>(productDTO, product);
+            product = _mapper.Map(productDto, product);
             await _productRepository.UpdateAsync(product);
             return ResultService.Ok("Produto editado!");
         }

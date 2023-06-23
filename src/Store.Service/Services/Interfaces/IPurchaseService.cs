@@ -4,11 +4,10 @@ namespace Store.Service.Services.Interfaces
 {
     public interface IPurchaseService
     {
-        Task<ResultService<PurchaseDTO>> CreatePurchaseAsync(PurchaseDTO purchaseDTO);
-        Task<ResultService<PurchaseDetailDTO>> GetByPurchaseIdAsync(int purchaseId);
-        Task<ResultService<ICollection<PurchaseDetailDTO>>> GetAllPurchasesAsync();
-        Task<ResultService<PurchaseDTO>> UpdatePurchaseAsync(PurchaseDTO purchaseDTO);
+        Task<ResultService<PurchaseDto>> CreatePurchaseAsync(PurchaseDto purchaseDTO);
+        Task<ResultService<PurchaseDetailDto>> GetByPurchaseIdAsync(int purchaseId);
+        Task<ResultService<ICollection<PurchaseDetailDto>>> GetAllPurchasesAsync();
+        Task<ResultService<PurchaseDto>> UpdatePurchaseAsync(PurchaseDto purchaseDTO);
         Task<ResultService> DeletePurchaseAsync(int purchaseId);
-
     }
 }

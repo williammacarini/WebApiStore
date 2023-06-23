@@ -2,9 +2,9 @@
 
 namespace Store.Service.DTOs.Validations
 {
-    public class ProductDTOValidator : AbstractValidator<ProductDTO>
+    public class ProductDtoValidator : AbstractValidator<ProductDto>
     {
-        public ProductDTOValidator()
+        public ProductDtoValidator()
         {
             RuleFor(r => r.Name)
                 .NotEmpty()

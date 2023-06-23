@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infra", "04 - Infra", "{74745A8E-E302-417A-AA56-C3797679D68F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Test", "05 - Test", "{9C175A4D-FD9D-4366-ADCE-AFD772FE1850}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Service", "src\Store.Service\Store.Service.csproj", "{AE641F82-F69E-40B9-9752-E68C08F9BE00}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Domain", "src\Store.Domain\Store.Domain.csproj", "{5ADA27B0-F3D7-4D88-891F-A4D3E4E3107A}"
@@ -23,9 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.01 - Data", "04.01 - Dat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.02 - CrossCutting", "04.02 - CrossCutting", "{C9AB7EB9-BB05-40D3-AA15-FE74DBCEA5B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Infra.Data", "src\Store.Infra.Data\Store.Infra.Data.csproj", "{D6E0B0C4-F26C-4ED0-86FD-29DE38FE46B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Infra.Data", "src\Store.Infra.Data\Store.Infra.Data.csproj", "{D6E0B0C4-F26C-4ED0-86FD-29DE38FE46B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Infra.CrossCutting", "src\Store.Infra.CrossCutting\Store.Infra.CrossCutting.csproj", "{674E9510-03B7-4E75-B669-C934B4E88501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Infra.CrossCutting", "src\Store.Infra.CrossCutting\Store.Infra.CrossCutting.csproj", "{674E9510-03B7-4E75-B669-C934B4E88501}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

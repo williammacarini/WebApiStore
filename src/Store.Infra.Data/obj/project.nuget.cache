@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p6bcAHmy3pOUsRh4dTIHg3HnPcFwSKuKNcFBuytPUnBAXvNgTsukkPjLZwBuSmawX6H4mN48l97zKiPzF/ycKg==",
+  "dgSpecHash": "hCJR31iQH3vKYPYl70NpaSLOvzwBOCl7R97MfDREHUju2dd/AAB9nRUmIRLoO4xVkYYoa8zgJZhDg/7nOvKjxA==",
   "success": true,
-  "projectFilePath": "E:\\My projects\\WebApiStore\\src\\Store.Infra.Data\\Store.Infra.Data.csproj",
+  "projectFilePath": "C:\\Repository\\GitHub\\WebApiStore\\src\\Store.Infra.Data\\Store.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.6\\microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -103,7 +103,10 @@
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
   ],
   "logs": []
 }

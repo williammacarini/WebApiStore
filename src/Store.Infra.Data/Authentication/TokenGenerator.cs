@@ -30,5 +30,6 @@ namespace Store.Infra.Data.Authentication
                 acess_token = token,
                 expirations = expires
             };
+        }
     }
 }

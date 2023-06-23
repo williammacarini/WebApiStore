@@ -18,7 +18,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreatePurchaseAsync([FromBody] PurchaseDTO purchaseDTO)
+        public async Task<ActionResult> CreatePurchaseAsync([FromBody] PurchaseDto purchaseDTO)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace WebApiStore.Controllers
 
         }
 
-        [HttpGet]
+        [HttpGet(Name = nameof(GetAllPurchasesAsync))]
         public async Task<ActionResult> GetAllPurchasesAsync()
         {
                 var result = await _purchaseService.GetAllPurchasesAsync();
@@ -46,7 +46,7 @@ namespace WebApiStore.Controllers
                 return BadRequest(result);
         }
 
-        [HttpGet]
+        [HttpGet(Name = nameof(GetByPurchaseIdAsync))]
         public async Task<ActionResult> GetByPurchaseIdAsync(int purchaseId)
         {
             var result = await _purchaseService.GetByPurchaseIdAsync(purchaseId);
@@ -57,7 +57,7 @@ namespace WebApiStore.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdatePurchaseAsync([FromBody] PurchaseDTO purchaseDTO)
+        public async Task<ActionResult> UpdatePurchaseAsync([FromBody] PurchaseDto purchaseDTO)
         {
             try
             {

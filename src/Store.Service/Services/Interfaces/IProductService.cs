@@ -4,10 +4,10 @@ namespace Store.Service.Services.Interfaces
 {
     public interface IProductService
     {
-        Task<ResultService<ProductDTO>> CreateProductAsync(ProductDTO product);
-        Task<ResultService<ProductDTO>> GetProductByIdAsync(int productId);
-        Task<ResultService<ICollection<ProductDTO>>> GetAllProductsAsync();
-        Task<ResultService> UpdateProductAsync(ProductDTO productDTO);
+        Task<ResultService<ProductDto>> CreateProductAsync(ProductDto product);
+        Task<ResultService<ProductDto>> GetProductByIdAsync(int productId);
+        Task<ResultService<ICollection<ProductDto>>> GetAllProductsAsync();
+        Task<ResultService> UpdateProductAsync(ProductDto productDTO);
         Task<ResultService> DeleteProductAsync(int id);
     }
 }

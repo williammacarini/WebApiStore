@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gBPNm/1LTZKT8nO39dUWfKqGJwS6/hjri0Dh7TBA0/NK5DcsDfEXzT7V9viLS9sadZIlwreW/SntLJiJ3dZKqw==",
+  "dgSpecHash": "yk9EtnZhGVFpn/NhiJPHA2UXBTCjOBpYZoMcjvuN3EY63p6q2Zyk9Cj590TrjO39Oxpq1dRIFNQM9WplQZigdw==",
   "success": true,
-  "projectFilePath": "E:\\My projects\\WebApiStore\\src\\Store.Domain\\Store.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Repository\\GitHub\\WebApiStore\\src\\Store.Domain\\Store.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 ﻿namespace Store.Service.DTOs
 {
-    public class ProductDTO
+    public class ProductDto
     {
         public int ProductId { get; set; }
         public string Name { get; set; }

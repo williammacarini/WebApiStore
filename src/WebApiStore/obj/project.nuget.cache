@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ARLeQizDzuU1c8XmbWeTZVla56t3Wa1AMuI1yZRTQIRcssvqRtEicl5s+csBhjr4d4bpIm9mu1frBvH4UqwVXg==",
+  "dgSpecHash": "L1RvwDmOAwd1JJ4g2aP4Xgy1MurvBZKwQ1ApzDWV4AtH+UTUGkQvh3BZtxV6g4GqVCGJJt5gehDfgiDrygniCA==",
   "success": true,
-  "projectFilePath": "E:\\My projects\\WebApiStore\\src\\WebApiStore\\WebApiStore.csproj",
+  "projectFilePath": "C:\\Repository\\GitHub\\WebApiStore\\src\\WebApiStore\\WebApiStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\william.macarini\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -157,7 +157,11 @@
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\weasel.core\\5.5.0\\weasel.core.5.5.0.nupkg.sha512",
-    "C:\\Users\\william.macarini\\.nuget\\packages\\weasel.postgresql\\5.5.0\\weasel.postgresql.5.5.0.nupkg.sha512"
+    "C:\\Users\\william.macarini\\.nuget\\packages\\weasel.postgresql\\5.5.0\\weasel.postgresql.5.5.0.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.18\\microsoft.netcore.app.host.win-x64.6.0.18.nupkg.sha512"
   ],
   "logs": []
 }

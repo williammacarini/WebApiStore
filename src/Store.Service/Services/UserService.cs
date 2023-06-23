@@ -18,43 +18,43 @@ namespace Store.Service.Services
             _mapper = mapper;
         }
 
-        public async Task<ResultService<UserDTO>> CreateAsync(UserDTO userDTO)
+        public async Task<ResultService<UserDto>> CreateAsync(UserDto userDto)
         {
-            if (userDTO == null)
-                return ResultService.Fail<UserDTO>("Deve ser informado o usuário!");
+            if (userDto == null)
+                return ResultService.Fail<UserDto>("Deve ser informado o usuário!");
 
-            var result = new UserDTOValidator().Validate(userDTO);
+            var result = new UserDtoValidator().Validate(userDto);
 
             if (!result.IsValid)
-                return ResultService.RequestError<UserDTO>("Os campos estão incorretos!", result);
+                return ResultService.RequestError<UserDto>("Os campos estão incorretos!", result);
 
-            var user = _mapper.Map<User>(userDTO);
+            var user = _mapper.Map<User>(userDto);
             var data = await _userRepository.CreateUserAsync(user);
-            return ResultService.Ok<UserDTO>(_mapper.Map<UserDTO>(data));
+            return ResultService.Ok(_mapper.Map<UserDto>(data));
         }
 
-        public async Task<ResultService<ICollection<UserDTO>>> GetUserAsync()
+        public async Task<ResultService<ICollection<UserDto>>> GetUserAsync()
         {
             var people = await _userRepository.GetPeopleAsync();
             if (people == null)
-                return ResultService.Fail<ICollection<UserDTO>>("Usuários não encontrados!");
-            return ResultService.Ok<ICollection<UserDTO>>(_mapper.Map<ICollection<UserDTO>>(people));
+                return ResultService.Fail<ICollection<UserDto>>("Usuários não encontrados!");
+            return ResultService.Ok(_mapper.Map<ICollection<UserDto>>(people));
         }
 
-        public async Task<ResultService<UserDTO>> GetUserByIdAsync(int id)
+        public async Task<ResultService<UserDto>> GetUserByIdAsync(int userId)
         {
-            var person = await _userRepository.GetByIdAsync(id);
+            var person = await _userRepository.GetByIdAsync(userId);
             if (person == null)
-                return ResultService.Fail<UserDTO>("Usuário não encontrados!");
-            return ResultService.Ok<UserDTO>(_mapper.Map<UserDTO>(person));
+                return ResultService.Fail<UserDto>("Usuário não encontrados!");
+            return ResultService.Ok(_mapper.Map<UserDto>(person));
         }
 
-        public async Task<ResultService> UpdateUserAsync(UserDTO userDTO)
+        public async Task<ResultService> UpdateUserAsync(UserDto userDTO)
         {
             if (userDTO == null)
                 return ResultService.Fail("Objeto deve ser informado!");
 
-            var userValidation = new UserDTOValidator().Validate(userDTO);
+            var userValidation = new UserDtoValidator().Validate(userDTO);
 
             if (!userValidation.IsValid)
                 return ResultService.RequestError("Erro na validação dos campos!", userValidation);
@@ -64,7 +64,7 @@ namespace Store.Service.Services
             if (user == null)
                 return ResultService.Fail("Usuário não encontrado!");
 
-            user = _mapper.Map<UserDTO, User>(userDTO, user);
+            user = _mapper.Map(userDTO, user);
             await _userRepository.UpdateAsync(user);
             return ResultService.Ok("Usuário atualizado!");
         }
@@ -81,10 +81,10 @@ namespace Store.Service.Services
             return ResultService.Ok($"Usuário com Id: {userId} foi excluído com sucesso!");
         }
 
-        public async Task<ResultService<PagedBaseResponseDTO<UserDTO>>> GetPagedUserAsync(UserFilterDb userFilterDb)
+        public async Task<ResultService<PagedBaseResponseDto<UserDto>>> GetPagedUserAsync(UserFilterDb userFilterDb)
         {
             var peoplePaged = await _userRepository.GetPagedUserAsync(userFilterDb);
-            var result = new PagedBaseResponseDTO<UserDTO>(peoplePaged.TotalRegisters, _mapper.Map<List<UserDTO>>(peoplePaged.Data));
+            var result = new PagedBaseResponseDto<UserDto>(peoplePaged.TotalRegisters, _mapper.Map<List<UserDto>>(peoplePaged.Data));
 
             return ResultService.Ok(result);
         }

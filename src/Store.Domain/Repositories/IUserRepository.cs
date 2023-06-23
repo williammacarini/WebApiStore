@@ -11,6 +11,6 @@ namespace Store.Domain.Repositories
         Task UpdateAsync(User user);
         Task DeleteAsync(User user);
         Task<int> GetIdByDocumentAsync(string document);
-        Task<PagedBaseResponse<User>> GetPagedUserAsync(UserFilterDb);
+        Task<PagedBaseResponse<User>> GetPagedUserAsync(UserFilterDb request);
     }
 }

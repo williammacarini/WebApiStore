@@ -14,11 +14,7 @@ namespace Store.Service.Services
             {
                 IsSucess = false,
                 Message = message,
-                Errors = validationResult.Errors.Select(s => new ErrorValidation
-                {
-                    Field = s.PropertyName,
-                    Message = s.ErrorMessage
-                }).ToList()
+                Errors = validationResult.Errors.Select(s => new ErrorValidation(s.PropertyName, s.ErrorMessage)).ToList()
             };
         }
 
@@ -28,33 +24,29 @@ namespace Store.Service.Services
             {
                 IsSucess = false,
                 Message = message,
-                Errors = validationResult.Errors.Select(s => new ErrorValidation
-                {
-                    Field = s.PropertyName,
-                    Message = s.ErrorMessage
-                }).ToList()
+                Errors = validationResult.Errors.Select(s => new ErrorValidation(s.PropertyName, s.ErrorMessage)).ToList()
             };
         }
 
-        public static ResultService Fail(string message) => new ResultService
+        public static ResultService Fail(string message) => new()
         {
             IsSucess = false,
             Message = message
         };
 
-        public static ResultService<T> Fail<T>(string message) => new ResultService<T>
+        public static ResultService<T> Fail<T>(string message) => new()
         {
             IsSucess = false,
             Message = message
         };
 
-        public static ResultService Ok(string message) => new ResultService
+        public static ResultService Ok(string message) => new()
         {
             IsSucess = true,
             Message = message
         };
 
-        public static ResultService<T> Ok<T>(T data) => new ResultService<T>
+        public static ResultService<T> Ok<T>(T data) => new()
         {
             IsSucess = true,
             Data = data

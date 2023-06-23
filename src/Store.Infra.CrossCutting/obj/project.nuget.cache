@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MAmZoewvk37j3SRMgYEFIjTUsncT6wEsbqFNvugZwJusfj4UAm9SIT7WiBUnXgGDwTRFLoRNUF0/nl4FT5zTCA==",
+  "dgSpecHash": "VhZXtwnWKQ5/Q/0vcN6kdxwVPWzDjoqVx0ClartfWzRHXveY/icbLbPz+LBUHKKDeR97vA2al8ywRAdl8BmgyA==",
   "success": true,
-  "projectFilePath": "E:\\My projects\\WebApiStore\\src\\Store.Infra.CrossCutting\\Store.Infra.CrossCutting.csproj",
+  "projectFilePath": "C:\\Repository\\GitHub\\WebApiStore\\src\\Store.Infra.CrossCutting\\Store.Infra.CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\william.macarini\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -106,7 +106,10 @@
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\william.macarini\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
   ],
   "logs": []
 }

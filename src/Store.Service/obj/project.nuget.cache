@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Enob1c+nq9V/nOy3bXskhGWo8mg/QPNcXCzFvBQsO8DTp+ETUN041VKgoNCx37xHupdvkAsU3j2hHa9Fs+RtUg==",
+  "dgSpecHash": "wNtjImuys6hvxcDNbXTMlNzV3irVfTscUu5KPPZR4YqXis3t68ZyIJs3c6c11KIjgkvIiIeAnupAHkaZAvmuxg==",
   "success": true,
-  "projectFilePath": "E:\\My projects\\WebApiStore\\src\\Store.Service\\Store.Service.csproj",
+  "projectFilePath": "C:\\Repository\\GitHub\\WebApiStore\\src\\Store.Service\\Store.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\william.macarini\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\william.macarini\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
-    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\william.macarini\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
   ],
   "logs": []
 }
